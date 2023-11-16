@@ -1,6 +1,10 @@
+import {StyleContext, getDefaultValue} from "./StyleContext";
+import { isOnServer } from "./ssr";
+import type { ComponentStyle } from "./StyleContext";
+
 function sharedFunction() {
-  console.log("this is from shared package v0.1.1");
   return "";
 }
 
-export { sharedFunction };
+export { sharedFunction, StyleContext, isOnServer, getDefaultValue };
+export type { ComponentStyle };

@@ -5,16 +5,24 @@
     "node": ">=16"
   },
   "scripts": {
+    "dev": "pnpm --filter \"./**\" --stream --parallel dev",
+    "dev:apps": "pnpm --filter \"./apps/**\" --stream --parallel dev",
+    "dev:packages": "pnpm --filter \"./packages/**\" --stream --parallel dev",
     "build": "pnpm -r build",
     "build:packages": "pnpm --filter \"./packages/**\" -r build",
     "build:apps": "pnpm --filter \"./apps/**\" -r build",
     "publish:packages": "pnpm --filter \"./packages/**\" -r publish --access public --no-git-checks",
     "core": "pnpm --filter core",
-    "demo": "pnpm --filter demo"
+    "shell": "pnpm --filter shell",
+    "standalone": "pnpm --filter standalone",
+    "form": "pnpm --filter form",
+    "mfe1": "pnpm --filter mfe1",
+    "apps": "pnpm --filter \"./apps/**\"",
+    "packages": "pnpm --filter \"./packages/**\""
   },
   "devDependencies": {
     "@types/node": "^20.9.0",
-    "@types/react": "^18.2.15",
+    "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
@@ -24,6 +32,7 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "sass": "^1.69.5",
     "typescript": "^5.0.2",
     "vite": "^4.5.0",
     "vite-plugin-dts": "^3.6.3"

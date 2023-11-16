@@ -1,0 +1,28 @@
+{
+  "name": "mfe1",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 5001",
+    "build": "next build",
+    "start": "next start -p 5001",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@duannx-poc-base-ui/core": "workspace:^",
+    "@module-federation/nextjs-mf": "7.0.8",
+    "@t1rearc-ui-base/component": "1.2.4",
+    "next": "13.4.2",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.0.2",
+    "sass": "^1.69.5",
+    "typescript": "^5"
+  }
+}

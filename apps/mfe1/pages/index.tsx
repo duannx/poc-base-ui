@@ -1,14 +1,11 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import { Button, Heading, sharedFunction } from "@duannx-poc-base-ui/core";
+import Head from 'next/head'
+import Image from 'next/image'
+import { Inter } from 'next/font/google'
+import styles from '@/styles/Home.module.css'
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-  sharedFunction();
-
   return (
     <>
       <Head>
@@ -18,12 +15,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <Button
-          onClick={() => {
-            console.log("button onclick");
-          }}
-        ></Button>
-        <Heading></Heading>
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
@@ -35,7 +26,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{" "}
+              By{' '}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -119,5 +110,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  );
+  )
 }

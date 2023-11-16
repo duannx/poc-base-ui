@@ -27,5 +27,6 @@ export default defineConfig({
         preserveModules: true,
       },
     },
+    cssCodeSplit: true
   },
 });
